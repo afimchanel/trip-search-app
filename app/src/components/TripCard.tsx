@@ -1,12 +1,8 @@
 import React from 'react';
-import { Trip } from '../interfaces/Trip';
+import { TripCardProps } from '../interfaces/Trip';
 import { Link } from 'react-router-dom';
 import { Grid, Typography, Box, } from '@mui/material';
 
-interface TripCardProps {
-  trip: Trip;
-  onTagClick: (tag: string) => void;
-}
 
 const TripCard: React.FC<TripCardProps> = ({ trip, onTagClick }) => {
 
